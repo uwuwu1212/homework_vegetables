@@ -1,0 +1,199 @@
+/* 通用設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EDF2C5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 0;
+    color: #778A50;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    width: 940px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pic1, .pic2 {
+    margin-right: 10px;
+}
+
+.line1 {
+    width: 1px;
+    height: 30px;
+    background-color: #778A50;
+    margin: 0 5px;
+}
+
+.button {
+    border: 1px solid #778A50;
+    border-radius: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.button span {
+    color: #778A50;
+    text-align: center;
+    display: block;
+}
+
+.button span:hover {
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    background-color: #778A50;
+    border-radius: 5px;
+    padding: 10px 0;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 50px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #EDF2C5;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content - Pumpkin Image */
+.pumpkin {
+    display: flex;
+    justify-content: center;
+    max-width: 940px;
+    margin: 20px auto;
+}
+
+.pumpkin img {
+    width: 100%;
+    max-width: 940px;
+    height: auto;
+}
+
+/* Market Section */
+.market {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    width: 940px; /* 調整寬度 */
+    border-radius: 5px; /* 將圓角設置為與nav相同 */
+    max-width: 940px; 
+    margin: 20px auto; /* 上方的間距與導航一致 */
+}
+
+.item--1, .item--3 {
+    grid-column: 1; /* 第一列 */
+}
+
+.item--2, .item--4 {
+    grid-column: 2; /* 第二列 */
+}
+
+.item--1, .item--2 {
+    grid-row: 1; /* 第一行 */
+    text-align: left;
+    padding-left: 20px;
+    background-color: #778A50;
+    color: #EDF2C5;
+    padding: 20px;
+    max-width: 940px;
+    display: flex; /* 使用 flexbox */
+    flex-direction: column; /* 使內容垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    height: 20px; /* 設定高度以保持一致 */
+    border-radius: 5px;
+}
+
+.item--3 {
+    grid-row: 2; /* 第二行 */
+    display: flex; /* 使用 flexbox */
+    justify-content: space-between; /* 等距顯示 */
+    align-items: stretch; /* 使子項目填滿父項目高度 */
+}
+
+.item--4 {
+    grid-row: 2; /* 第二行 */
+    text-align: left;
+    background-color: #F7FBDA;
+    font-size: 10px;
+    color: #7D7D7D;
+    padding: 10px; /* 減小內邊距 */
+    border-radius: 14px;
+    height: 140px; /* 設定固定高度 */
+    overflow: hidden; /* 防止文字溢出 */
+    display: flex; /* 使用 flexbox 以便於排列 */
+    flex-direction: column; /* 垂直排列 */
+    justify-content: center; /* 垂直居中 */
+}
+
+.item--3 img {
+    flex: 1; 
+    max-width: 100%; 
+    height: 100%; /* 設定為100%，使其高度與item--4一致 */
+    object-fit: cover; /* 確保圖片按比例填滿 */
+}
+
+.line2 {
+    width: 100%; /* 使線條寬度為 100% */
+    height: 1px; /* 調整為線條高度 */
+    background-color: #778A50; /* 顏色與上方線條相同 */
+    color: #7D7D7D;
+    margin: 10px 0; /* 添加上下邊距 */
+}
+
+.item--4 p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #778A50;
+    color: #EDF2C5;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin: 20px auto 0;
+}
